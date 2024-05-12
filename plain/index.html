@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <body>
+
+    <div id="root">Not Rendered</div>
+  </body>
+  <script>
+    const MyName = React.createElement("h1", {id : 'name', className : "yourName"}, "Rishi Anand")
+    const age = React.createElement("span", {id : "age", style : {color: "red"}}, "Age")
+
+    const Container = React.createElement("div", {className : "container"}, [MyName, age])
+    const RenderHere = ReactDOM.createRoot(document.getElementById("root"))
+
+    RenderHere.render(Container)
+  </script>
+</html>
