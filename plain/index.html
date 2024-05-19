@@ -14,16 +14,26 @@
     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
   ></script>
   <body>
-
     <div id="root">Not Rendered</div>
   </body>
   <script>
-    const MyName = React.createElement("h1", {id : 'name', className : "yourName"}, "Rishi Anand")
-    const age = React.createElement("span", {id : "age", style : {color: "red"}}, "Age")
+    const MyName = React.createElement(
+      "h1",
+      { id: "name", className: "yourName" },
+      "Rishi Anand"
+    );
+    const age = React.createElement(
+      "span",
+      { id: "age", style: { color: "red" } },
+      "Age"
+    );
 
-    const Container = React.createElement("div", {className : "container"}, [MyName, age])
-    const RenderHere = ReactDOM.createRoot(document.getElementById("root"))
+    const Container = React.createElement("div", { className: "container" }, [
+      MyName,
+      age,
+    ]);
+    const RenderHere = ReactDOM.createRoot(document.getElementById("root"));
 
-    RenderHere.render(Container)
+    RenderHere.render(Container);
   </script>
 </html>
