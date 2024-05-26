@@ -8,7 +8,7 @@ module.exports = {
     filename: "bundle.js",
   },
   resolve: {
-    extensions: [".js", ".jsx"], // add .jsx to the list of extensions to resolve
+    extensions: [".js", ".jsx"], 
   },
   module: {
     rules: [
@@ -35,6 +35,6 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    port: 3001,
+    port: 3000,
   },
 };

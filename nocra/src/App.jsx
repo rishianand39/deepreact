@@ -1,9 +1,12 @@
 import React from 'react'
 import "./App.css"
+import Img from './components/Img'
 
 const App = () => {
   return (
-    <div id='app'>React app</div>
+    <div id='app'>
+      <Img/>
+    </div>
   )
 }
 
